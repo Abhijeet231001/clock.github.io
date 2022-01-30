@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 225, 37, 0.5),
+        rgba(184, 225, 0, 0.623)
+    )
+}
+
+#clock h2{
+    position: relative;
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 40px 0;
+    font-weight: 800;
+    letter-spacing: 0.3em;
+    font-size: 2em;
+}
+
+#clock #time{
+    display: flex;
+}
+
+#clock #time div{
+    position: relative;
+    margin: 0 5px;
+}
+
+#clock #time div span{
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 120px;
+    background: rgba(0, 225, 37, 0.5);
+    color: black;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+#clock #time div span:nth-child(2){
+    height: 30px;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    z-index: 10;
+    box-shadow: none;
+    background: rgba(0, 225, 37, 0.418);
+}
+
+#clock #time div:last-child span{
+    background: rgba(184, 225, 0, 0.623);
+}
+
+#clock #time div:last-child span:nth-child(2){
+    background: rgba(184, 225, 0, 0.432);
+}
